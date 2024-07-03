@@ -1,0 +1,257 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333;
+}
+html,body{
+    background-color: #fff;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.wrap{
+   
+    width: 100%;
+}
+header{
+   width: 100%;
+    background-color: #585555;
+}
+.header-inner{
+    width: 1200px;
+   margin: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+/* 로고 */
+.logo{
+    width: 200px;
+    background-color: aquamarine;
+    padding-top: 15px;
+}
+.logo a img{
+    width: 100%;
+}
+.menu{
+    position: relative;
+    width: 950px;
+    background-color: beige;
+    text-align: center;
+}
+.navi{
+    position: absolute;
+    right: 30px;
+    width: 700px;
+    display: flex;
+    background-color: #fff;
+    margin-top: 30px;
+}
+.navi > li{
+    width: calc(100% / 4);
+}
+.navi > li > a{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+.navi > li > a:hover{
+    background-color: rgb(22, 122, 122);
+    color: #fff;
+}
+/* .navi > li > a:hover + .submenu{
+    display: block;
+} */
+.submenu{
+background-color: #fff;
+z-index: 1;
+display: none;
+}
+.submenu > li > a{
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.submenu > li > a:hover{
+    background-color: aqua;
+    
+}
+/* main */
+.bodyWrap{
+    width: 1200px;
+    height: 500px;
+    background-color: blueviolet;
+    margin: auto;
+}
+.imgslide{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.slidelist{
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+.slidelist li{
+    position: relative;
+    height: 100%;
+
+}
+.slidelist li a{
+    position: relative;
+    height: 100%;
+    width: 1200px;
+
+}
+.slidelist li a img{
+    width: 100%;
+    height: 100%;
+}
+.slidelist li a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* contents */
+.contents{
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+}
+/* 공지사항/갤러리 */
+.tabmenu{
+    width: 395px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    padding: 5px 0;
+}
+.tabmenu > li{
+    width: 100px;
+    line-height: 30px;
+    height: 30px;
+    
+}
+.tabmenu > li div{
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+}
+.tabmenu > li.active div{
+    width: 393px;
+    height: 148px;
+    border: 1px solid #ddd;
+}
+.tabmenu > li > a{
+    font-size: 16px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+.tabmenu > li > a:hover{
+    background-color: #eee;
+}
+.tabmenu > li.active > a{
+    background-color: #fff;
+}
+/* 공지사항 영역 */
+.notice ul{
+    width: 393px;
+    padding: 10px;
+}
+.notice ul li{
+    padding: 0 10px;
+    line-height: 32px;
+    font-size: 15px;
+}
+.notice ul li:nth-child(2n){
+    background-color: #ccc;
+}
+/* 갤러리 영역 */
+.gallery{
+
+}
+.gallery ul{
+    padding: 30px 10px;
+    width: 393px;
+    display: flex;
+    gap: 10px;
+}
+.gallery ul li{
+    width: calc(100% / 3);
+}
+.gallery ul li a img{
+    width: 100%;
+}
+/* 배너/바로가기 */
+.otherWrap{
+    display: flex;
+}
+.banner{
+    position: relative;
+    display: block;
+}
+
+.banner a h4{
+position: absolute;
+top: 43%;
+left: 20%;
+color: #fff;
+background-color: rgba(0, 0, 0, 0.3);
+padding: 5px 100px;
+}
+.shortcut{
+    position: relative;
+    display: block;
+}
+.shortcut a h4{
+    position: absolute;
+    top: 43%;
+    left: 15%;
+    transform: translate(-50% -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 5px 100px;
+
+}
+/* 하단 */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(60, 115, 216);
+    margin-top: 10px;
+    position: relative;
+}
+.logo2{
+    width: 500px;
+    float: left;
+}
+.footermenu{
+    float: left;
+    width: 700px;
+    /* background-color: aqua; */
+}
+.ftmenu li{
+    float: left;
+    margin-left: 50px;
+    padding: 10px 20px;
+}
+
