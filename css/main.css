@@ -15,6 +15,52 @@ a{
     text-decoration: none;
     display: block;
 }
+
+/* 모달창 */
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  /* 제이쿼리에서 클래스를 더해서 modal 보이게 함 */
+  .modal.active{
+    display: block;
+  }
+  .modal-wrap{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  .modal-wrap p{
+    padding-top: 50px;
+    width: 100%;
+    height: 95%;
+    font-size: 18px;
+  }
+  .close{
+    width: 80px;
+    height: 30px;
+    font-size: 13px;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+   position: absolute;
+    padding: 10px 20px;
+    background-color: #351d1d;
+  }
+/* 전체 레이아웃 */
+
 .wrap{
    
     width: 100%;
@@ -55,6 +101,7 @@ header{
 }
 .navi > li{
     width: calc(100% / 4);
+  
 }
 .navi > li > a{
     line-height: 40px;
@@ -75,6 +122,13 @@ header{
 background-color: #fff;
 z-index: 1;
 display: none;
+position: relative;
+width: 175px;
+height: 200px;
+}
+.submenu > li {
+    background-color: #fff;
+    
 }
 .submenu > li > a{
     line-height: 40px;
@@ -203,6 +257,108 @@ display: none;
 }
 /* 배너/바로가기 */
 .otherWrap{
+    width: calc(1200px - 395px);
+    display: flex;
+    background-color: #f2b2b2;
+    position: relative;
+}
+.banner , .shortcut{
+    width: 50%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+.banner a{
+    position: relative;
+    height: 100%;
+}
+.banner a h4, .shortcut a h4{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner a img{
+    width: 100%;
+    height: 100%;
+    
+}
+.shortcut a{
+    width: 100%;
+    height: 100%;
+}
+.shortcut a img{
+    width: 100%;
+    height: 100%;
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: royalblue;
+    height: 100px;
+}
+.footer-inner{
+    width: 1200px;
+    background-color: #ccc;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+/* ftlogo */
+.ft-logo{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+}
+.ft-logo a{
+    width: 100%;
+    height: 100%;
+    
+}
+.ft-logo a img{
+    width: 100%;
+    height: 100%;
+}
+/* ft-site */
+
+.ft-site{
+    width: 1000px;
+    height: 100%;
+    background-color: #f2b2b2;
+    text-align: center;
+}
+.ft-menu , .copy{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(145, 131, 182);
+}
+.ft-menu ul{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.ft-menu ul li a{
+    color: #ffffff;
+    font-size: 14px;
+}
+.copy{
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+
+
+/* .otherWrap{
     display: flex;
 }
 .banner{
@@ -231,9 +387,9 @@ padding: 5px 100px;
     color: #fff;
     padding: 5px 100px;
 
-}
+} */
 /* 하단 */
-.footer{
+/* .footer{
     width: 100%;
     height: 100px;
     background-color: rgb(60, 115, 216);
@@ -246,12 +402,12 @@ padding: 5px 100px;
 }
 .footermenu{
     float: left;
-    width: 700px;
+    width: 700px; */
     /* background-color: aqua; */
 }
-.ftmenu li{
+/* .ftmenu li{
     float: left;
     margin-left: 50px;
     padding: 10px 20px;
 }
-
+ */
